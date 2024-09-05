@@ -1,0 +1,41 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ build project",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}/main.cpp",  // Replace/add all relevant .cpp files
+                "${workspaceFolder}/process/llm.cpp",
+                "${workspaceFolder}/input/stt.cpp",
+                "${workspaceFolder}/output/tts.cpp",
+                "${workspaceFolder}/signals.cpp",
+                "-o", "${workspaceFolder}/build/output",
+                "-L/Users/skyliu/vcpkg/installed/arm64-osx/lib",
+                "-I/Users/skyliu/vcpkg/installed/arm64-osx/include",
+                "-lcpr",
+                "-lssl",
+                "-lcrypto",
+                "-framework", "CoreFoundation",
+                "-framework", "Security"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    "VCPKG_ROOT": "/Users/skyliu/vcpkg"  // Set your VCPKG_ROOT path here
+                }
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Task modified to include multiple files and vcpkg integration."
+        }
+    ],
+    "version": "2.0.0"
+}

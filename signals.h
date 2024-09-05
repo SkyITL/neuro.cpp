@@ -3,7 +3,7 @@
 
 #include <vector>
 
-class Signal {
+class Signal { //static class to store signals for the program
 private:
     static bool humanSpeaking;
     static bool aiSpeaking;
@@ -13,15 +13,18 @@ private:
     static bool ttsReady;
     static bool sttReady;
 
+    //historyMessages stores all messages that have been sent
     static std::vector<std::string> historyMessages;
+
+    //chatMessages stores all messages that have been received
     static std::vector<std::string> chatMessages;
 
     //indication of all threads in the program to terminate
     static bool terminate;
 public:
-    Signal() = delete;
-    ~Signal() = delete;
-    Signal(const Signal &signal) = delete;
+    Signal();
+    ~Signal();
+    Signal(const Signal &signal);
 
     static void setHumanSpeaking(bool);
     static void setAiSpeaking(bool);
@@ -50,4 +53,4 @@ public:
     static bool getTerminate();
 };
 
-#endif
+#endif  // Signals_H

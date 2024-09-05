@@ -1,6 +1,18 @@
 #include "signals.h"
 
 #include <iostream>
+
+bool Signal::aiSpeaking = false;
+bool Signal::aiThinking = false;
+bool Signal::newMessage = false;
+std::vector<std::string> Signal::chatMessages;
+bool Signal::humanSpeaking = false;
+std::vector<std::string> Signal::historyMessages;
+double Signal::lastMessageTime = 0.0;
+bool Signal::sttReady = false;
+bool Signal::ttsReady = false;
+bool Signal::terminate = false;
+
 // Constructor and Destructor
 Signal::Signal() {
     humanSpeaking = false;
