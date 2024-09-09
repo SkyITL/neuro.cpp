@@ -1,21 +1,29 @@
 #ifndef TTS_H
 #define TTS_H
 
+#include "../signals.h"
+
+#include "speechapi_cxx.h"
+
 #include<iostream>
+#include<thread>
 
 class TTS {
 private:
     static bool speaking;
+    static Signal signal;
+    std::shared_ptr<Microsoft::CognitiveServices::Speech::SpeechSynthesizer> synthesizer;
 public:
-    TTS() = delete;
+    TTS(const std::string& subscriptionKey, const std::string& region);
     ~TTS() = delete;
     TTS(const TTS &tts) = delete;
 
     static void speak(std::string message);
+    static void audio_started();
+    static void audio_ended();
     static void stop();
     static void tts();
 };
 
-void tts();
 
 #endif  // TTS_H

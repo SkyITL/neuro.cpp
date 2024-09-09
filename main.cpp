@@ -20,7 +20,7 @@ int main() {
     // signal(SIGTERM, [](int) { std::cout << "Exiting..." << std::endl; });
 
     // create threads for each module
-    std::thread ttsThread(tts);
+    std::thread ttsThread(TTS::tts);
     std::thread llmThread(llm);
     std::thread sttThread(stt);
 

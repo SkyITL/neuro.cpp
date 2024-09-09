@@ -1,0 +1,3 @@
+/Users/skyliu/neuro.cpp/build/CMakeFiles/neuro.dir
+/Users/skyliu/neuro.cpp/build/CMakeFiles/edit_cache.dir
+/Users/skyliu/neuro.cpp/build/CMakeFiles/rebuild_cache.dir

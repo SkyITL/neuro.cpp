@@ -3,7 +3,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++ build project",
-            "command": "/usr/bin/g++",
+            "command": "cmake --build build",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
