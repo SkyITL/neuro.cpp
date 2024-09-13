@@ -129,6 +129,30 @@ neuro/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuro.dir/build.make CMakeFiles/neuro.dir/build
 .PHONY : neuro/fast
 
+input/stt.o: input/stt.cpp.o
+.PHONY : input/stt.o
+
+# target to build an object file
+input/stt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuro.dir/build.make CMakeFiles/neuro.dir/input/stt.cpp.o
+.PHONY : input/stt.cpp.o
+
+input/stt.i: input/stt.cpp.i
+.PHONY : input/stt.i
+
+# target to preprocess a source file
+input/stt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuro.dir/build.make CMakeFiles/neuro.dir/input/stt.cpp.i
+.PHONY : input/stt.cpp.i
+
+input/stt.s: input/stt.cpp.s
+.PHONY : input/stt.s
+
+# target to generate assembly for a file
+input/stt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuro.dir/build.make CMakeFiles/neuro.dir/input/stt.cpp.s
+.PHONY : input/stt.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -152,6 +176,54 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuro.dir/build.make CMakeFiles/neuro.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+output/tts.o: output/tts.cpp.o
+.PHONY : output/tts.o
+
+# target to build an object file
+output/tts.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuro.dir/build.make CMakeFiles/neuro.dir/output/tts.cpp.o
+.PHONY : output/tts.cpp.o
+
+output/tts.i: output/tts.cpp.i
+.PHONY : output/tts.i
+
+# target to preprocess a source file
+output/tts.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuro.dir/build.make CMakeFiles/neuro.dir/output/tts.cpp.i
+.PHONY : output/tts.cpp.i
+
+output/tts.s: output/tts.cpp.s
+.PHONY : output/tts.s
+
+# target to generate assembly for a file
+output/tts.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuro.dir/build.make CMakeFiles/neuro.dir/output/tts.cpp.s
+.PHONY : output/tts.cpp.s
+
+process/llm.o: process/llm.cpp.o
+.PHONY : process/llm.o
+
+# target to build an object file
+process/llm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuro.dir/build.make CMakeFiles/neuro.dir/process/llm.cpp.o
+.PHONY : process/llm.cpp.o
+
+process/llm.i: process/llm.cpp.i
+.PHONY : process/llm.i
+
+# target to preprocess a source file
+process/llm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuro.dir/build.make CMakeFiles/neuro.dir/process/llm.cpp.i
+.PHONY : process/llm.cpp.i
+
+process/llm.s: process/llm.cpp.s
+.PHONY : process/llm.s
+
+# target to generate assembly for a file
+process/llm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuro.dir/build.make CMakeFiles/neuro.dir/process/llm.cpp.s
+.PHONY : process/llm.cpp.s
 
 signals.o: signals.cpp.o
 .PHONY : signals.o
@@ -186,9 +258,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... neuro"
+	@echo "... input/stt.o"
+	@echo "... input/stt.i"
+	@echo "... input/stt.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... output/tts.o"
+	@echo "... output/tts.i"
+	@echo "... output/tts.s"
+	@echo "... process/llm.o"
+	@echo "... process/llm.i"
+	@echo "... process/llm.s"
 	@echo "... signals.o"
 	@echo "... signals.i"
 	@echo "... signals.s"

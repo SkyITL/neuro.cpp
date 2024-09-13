@@ -2,6 +2,7 @@
 #define Signals_H
 
 #include <vector>
+#include <queue>
 
 class Signal { //static class to store signals for the program
 private:
@@ -12,6 +13,10 @@ private:
     static bool newMessage;
     static bool ttsReady;
     static bool sttReady;
+
+    //speakingTextQueue stores all text that needs to be spoken
+
+    static std::queue<std::string> speakingTextQueue;
 
     //historyMessages stores all messages that have been sent
     static std::vector<std::string> historyMessages;
@@ -24,7 +29,8 @@ private:
 public:
     Signal();
     ~Signal();
-    Signal(const Signal &signal);
+
+    //setters
 
     static void setHumanSpeaking(bool);
     static void setAiSpeaking(bool);
@@ -34,10 +40,16 @@ public:
     static void setTtsReady(bool);
     static void setSttReady(bool);
 
+    //methods to handle history and chat messages
+
     static void addHistoryMessage(std::string);
     static void addChatMessage(std::string);
 
+    //method to terminate all threads
+
     static void setTerminate(bool);
+
+    //getters
 
     static bool getHumanSpeaking();
     static bool getAiSpeaking();
@@ -46,6 +58,14 @@ public:
     static bool getNewMessage();
     static bool getTtsReady();
     static bool getSttReady();
+
+    //methods to handle speaking text
+
+    static void queueSpeakingText(const std::string& message);
+    static bool hasSpeakingText();
+    static std::string getNextSpeakingText();
+
+    //methods to handle history and chat messages
 
     static std::vector<std::string> getHistoryMessages();
     static std::vector<std::string> getChatMessages();

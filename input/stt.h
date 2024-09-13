@@ -5,19 +5,24 @@
 
 class STT {
 private:
-    //std::shared_ptr<Whisper> recorder;
-    static Signal signal;
-    bool enabled;
+    static bool enabled;           
+    static bool analyzeRequested;              // Static flag to check if STT is enabled
+    static Signal signal;                        // Static instance of Signal class for signaling
+    static std::vector<float> audioBuffer;       // Static buffer to store audio samples
+    static std::string currentText;              // Static string to accumulate recognized text
+    static bool isSilent(const std::vector<float> &buffer);  // Static function to detect silence
+    static std::string recognize(const std::vector<float> &audio); // Static function to call Whisper
+
 public:
-    STT();
-    ~STT();
-    STT(const STT &stt) = delete;
-    void process_text(std::string text);
-    void recording_start();
-    void recording_stop();
-    void listen_loop();
+    static void initialize();            // Initialize PortAudio and set up
+    static void terminate();             // Terminate PortAudio
+    static void process_text(const std::string &text);
+    static void recording_start();
+    static void recording_stop();
+    static void processAudioInput(const float *input, size_t frames);
+    static void listen_loop();
+    static void analyzeCollectedAudio();
 };
 
-void stt();
 
 #endif  // Stt_H

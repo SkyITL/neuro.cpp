@@ -81,12 +81,12 @@ clean: CMakeFiles/neuro.dir/clean
 CMakeFiles/neuro.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuro.dir/build.make CMakeFiles/neuro.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuro.dir/build.make CMakeFiles/neuro.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/skyliu/neuro.cpp/build/CMakeFiles --progress-num=1,2,3 "Built target neuro"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/skyliu/neuro.cpp/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target neuro"
 .PHONY : CMakeFiles/neuro.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/neuro.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/skyliu/neuro.cpp/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/skyliu/neuro.cpp/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/neuro.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/skyliu/neuro.cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/neuro.dir/rule

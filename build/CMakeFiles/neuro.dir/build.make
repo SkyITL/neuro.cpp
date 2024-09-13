@@ -97,19 +97,69 @@ CMakeFiles/neuro.dir/signals.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/neuro.dir/signals.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/skyliu/neuro.cpp/signals.cpp -o CMakeFiles/neuro.dir/signals.cpp.s
 
+CMakeFiles/neuro.dir/process/llm.cpp.o: CMakeFiles/neuro.dir/flags.make
+CMakeFiles/neuro.dir/process/llm.cpp.o: /Users/skyliu/neuro.cpp/process/llm.cpp
+CMakeFiles/neuro.dir/process/llm.cpp.o: CMakeFiles/neuro.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/skyliu/neuro.cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/neuro.dir/process/llm.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/neuro.dir/process/llm.cpp.o -MF CMakeFiles/neuro.dir/process/llm.cpp.o.d -o CMakeFiles/neuro.dir/process/llm.cpp.o -c /Users/skyliu/neuro.cpp/process/llm.cpp
+
+CMakeFiles/neuro.dir/process/llm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/neuro.dir/process/llm.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/skyliu/neuro.cpp/process/llm.cpp > CMakeFiles/neuro.dir/process/llm.cpp.i
+
+CMakeFiles/neuro.dir/process/llm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/neuro.dir/process/llm.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/skyliu/neuro.cpp/process/llm.cpp -o CMakeFiles/neuro.dir/process/llm.cpp.s
+
+CMakeFiles/neuro.dir/input/stt.cpp.o: CMakeFiles/neuro.dir/flags.make
+CMakeFiles/neuro.dir/input/stt.cpp.o: /Users/skyliu/neuro.cpp/input/stt.cpp
+CMakeFiles/neuro.dir/input/stt.cpp.o: CMakeFiles/neuro.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/skyliu/neuro.cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/neuro.dir/input/stt.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/neuro.dir/input/stt.cpp.o -MF CMakeFiles/neuro.dir/input/stt.cpp.o.d -o CMakeFiles/neuro.dir/input/stt.cpp.o -c /Users/skyliu/neuro.cpp/input/stt.cpp
+
+CMakeFiles/neuro.dir/input/stt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/neuro.dir/input/stt.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/skyliu/neuro.cpp/input/stt.cpp > CMakeFiles/neuro.dir/input/stt.cpp.i
+
+CMakeFiles/neuro.dir/input/stt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/neuro.dir/input/stt.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/skyliu/neuro.cpp/input/stt.cpp -o CMakeFiles/neuro.dir/input/stt.cpp.s
+
+CMakeFiles/neuro.dir/output/tts.cpp.o: CMakeFiles/neuro.dir/flags.make
+CMakeFiles/neuro.dir/output/tts.cpp.o: /Users/skyliu/neuro.cpp/output/tts.cpp
+CMakeFiles/neuro.dir/output/tts.cpp.o: CMakeFiles/neuro.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/skyliu/neuro.cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/neuro.dir/output/tts.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/neuro.dir/output/tts.cpp.o -MF CMakeFiles/neuro.dir/output/tts.cpp.o.d -o CMakeFiles/neuro.dir/output/tts.cpp.o -c /Users/skyliu/neuro.cpp/output/tts.cpp
+
+CMakeFiles/neuro.dir/output/tts.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/neuro.dir/output/tts.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/skyliu/neuro.cpp/output/tts.cpp > CMakeFiles/neuro.dir/output/tts.cpp.i
+
+CMakeFiles/neuro.dir/output/tts.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/neuro.dir/output/tts.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/skyliu/neuro.cpp/output/tts.cpp -o CMakeFiles/neuro.dir/output/tts.cpp.s
+
 # Object files for target neuro
 neuro_OBJECTS = \
 "CMakeFiles/neuro.dir/main.cpp.o" \
-"CMakeFiles/neuro.dir/signals.cpp.o"
+"CMakeFiles/neuro.dir/signals.cpp.o" \
+"CMakeFiles/neuro.dir/process/llm.cpp.o" \
+"CMakeFiles/neuro.dir/input/stt.cpp.o" \
+"CMakeFiles/neuro.dir/output/tts.cpp.o"
 
 # External object files for target neuro
 neuro_EXTERNAL_OBJECTS =
 
 neuro: CMakeFiles/neuro.dir/main.cpp.o
 neuro: CMakeFiles/neuro.dir/signals.cpp.o
+neuro: CMakeFiles/neuro.dir/process/llm.cpp.o
+neuro: CMakeFiles/neuro.dir/input/stt.cpp.o
+neuro: CMakeFiles/neuro.dir/output/tts.cpp.o
 neuro: CMakeFiles/neuro.dir/build.make
+neuro: /Users/skyliu/vcpkg/installed/arm64-osx/lib/libportaudio.a
+neuro: /Users/skyliu/vcpkg/installed/arm64-osx/lib/libcpr.a
 neuro: CMakeFiles/neuro.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/skyliu/neuro.cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable neuro"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/skyliu/neuro.cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable neuro"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/neuro.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

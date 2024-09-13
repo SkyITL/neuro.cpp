@@ -12,10 +12,9 @@ class TTS {
 private:
     static bool speaking;
     static Signal signal;
-    std::shared_ptr<Microsoft::CognitiveServices::Speech::SpeechSynthesizer> synthesizer;
+    static std::shared_ptr<Microsoft::CognitiveServices::Speech::SpeechSynthesizer> synthesizer;
 public:
     TTS(const std::string& subscriptionKey, const std::string& region);
-    ~TTS() = delete;
     TTS(const TTS &tts) = delete;
 
     static void speak(std::string message);
@@ -23,6 +22,7 @@ public:
     static void audio_ended();
     static void stop();
     static void tts();
+    static void HandleNewMessages();
 };
 
 

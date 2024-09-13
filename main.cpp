@@ -11,6 +11,38 @@ int main() {
 
     printf("Starting Project...");
 
+    const std::string speechKey = "863f1e1615a644ab956e71c71facf573";
+    const std::string speechRegion = "eastasia";
+    printf(Signal::getTerminate()? "True\n":"False\n");
+
+    // Create TTS object
+    TTS tts(speechKey, speechRegion);
+    AIHandler llm;
+
+    // Launch the TTS::HandleNewMessages() function in a separate thread
+    std::thread ttsThread(&TTS::HandleNewMessages); 
+    // Launch the STT::listen_loop() function in a separate thread
+    std::thread sttThread(&STT::listen_loop);
+    // Launch the AIHandler::HandleNewMessages() function in a separate thread
+    std::thread llmThread(&AIHandler::HandleNewMessages);
+
+    // Join the threads
+    sttThread.join();
+    llmThread.join();
+    ttsThread.join();
+
+    // tts.speak("Hello, this is a test of the Azure Text-to-Speech service.");
+
+    // Clean up the thread
+    /*if (ttsThread.joinable()) {
+        ttsThread.detach(); // Detach if you don't want to join to prevent blocking, or use join() if you want to wait for completion.
+    }
+    */
+    printf(Signal::getTerminate()? "True\n":"False\n");
+    while (!Signal::getTerminate()) {
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    }
+    /*
     // Set up signal handler for Ctrl+C
     // signal(SIGINT, [](int) {
     //     std::cout << "Exiting..." << std::endl;
@@ -27,7 +59,7 @@ int main() {
     // join all the threads
     ttsThread.join();
     llmThread.join();
-    sttThread.join();
+    sttThread.join();*/
 
     return 0;
 }

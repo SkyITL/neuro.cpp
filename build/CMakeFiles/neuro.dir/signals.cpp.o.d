@@ -1,4 +1,4 @@
-CMakeFiles/neuro.dir/main.cpp.o: /Users/skyliu/neuro.cpp/main.cpp \
+CMakeFiles/neuro.dir/signals.cpp.o: /Users/skyliu/neuro.cpp/signals.cpp \
   /Users/skyliu/neuro.cpp/signals.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__algorithm/copy.h \
@@ -735,34 +735,9 @@ CMakeFiles/neuro.dir/main.cpp.o: /Users/skyliu/neuro.cpp/main.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/literals.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/queue \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/deque \
-  /Users/skyliu/neuro.cpp/input/stt.h \
-  /Users/skyliu/neuro.cpp/input/../signals.h \
-  /Users/skyliu/neuro.cpp/process/llm.h \
-  /Users/skyliu/neuro.cpp/process/../signals.h \
-  /Users/skyliu/neuro.cpp/output/tts.h \
-  /Users/skyliu/neuro.cpp/output/../signals.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_common.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_common.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/spxdebug.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/azac_debug.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/azac_error.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/inttypes.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/inttypes.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/inttypes.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/string \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/iostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/ios \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__ios/fpos.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__string/extern_template_lists.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/azac_api_c_common.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/stdbool.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdbool.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/azac_api_c_diagnostics.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/azac_api_c_error.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/spxerror.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_error.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/azac_api_cxx_common.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_string_helpers.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/codecvt \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__locale \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/locale.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/locale.h \
@@ -772,19 +747,22 @@ CMakeFiles/neuro.dir/main.cpp.o: /Users/skyliu/neuro.cpp/main.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/system_error \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__errc \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cerrno \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/string \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__string/extern_template_lists.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/xlocale.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/_xlocale.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/xlocale/_ctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/xlocale/__wctype.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/xlocale/_inttypes.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/xlocale/_stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/xlocale/_stdlib.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/xlocale/_string.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/xlocale/_time.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/xlocale/_wchar.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/xlocale/_wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/istream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/ostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/bitset \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/locale \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/ios \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/streambuf \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/nl_types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/sys/types.h \
@@ -814,176 +792,4 @@ CMakeFiles/neuro.dir/main.cpp.o: /Users/skyliu/neuro.cpp/main.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cstdarg \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/azac_api_c_pal.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_property_bag.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_smart_handle.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_properties.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_enums.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_session.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speech_config.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_speech_config.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_audio_stream_format.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_audio_stream_format.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_audio_stream.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/future \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/thread \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_audio_stream.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_embedded_speech_config.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speech_recognition_model.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_speech_recognition_model.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speech_translation_model.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_speech_translation_model.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_embedded_speech_config.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_hybrid_speech_config.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_hybrid_speech_config.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_utils.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_audio_config.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_audio_processing_options.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_audio_processing_options.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_audio_config.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_eventargs.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_eventsignal.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_eventsignalbase.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__tree \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_session_eventargs.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_recognizer.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_recognition_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_recognition_eventargs.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_recognition_async_recognizer.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_recognizer.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_keyword_recognition_model.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_keyword_recognition_model.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_recognition_base_async_recognizer.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speech_recognition_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_diagnostics.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_intent_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_intent_trigger.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_intent_recognizer.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_translation_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_translation_recognizer.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_pattern_matching_model.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_language_understanding_model.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_speech_translation_config.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_factory.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_synthesis_request.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_synthesizer.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_connection.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_grammar.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_dialog_service_config.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_dialog_service_connector.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_conversation.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_conversation_transcription_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_meeting.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_meeting_transcription_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_user.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_participant.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_conversation_translator.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_ext_audiocompression.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_speaker_recognition.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_pronunciation_assessment_config.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speech_recognition_eventargs.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speech_recognizer.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_auto_detect_source_lang_config.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/sstream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/istream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/ostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/bitset \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_auto_detect_source_lang_config.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_source_lang_config.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/set \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_source_lang_config.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_conversational_language_understanding_model.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_language_understanding_model.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_intent_recognition_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_json.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_intent_recognition_eventargs.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_intent_recognizer.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_intent_trigger.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_pattern_matching_model.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_pattern_matching_intent.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_pattern_matching_entity.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/fstream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/filesystem \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/file_status.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/file_type.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/perms.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/path.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/iomanip \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/operations.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/space_info.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_session.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_translation_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_translation_eventargs.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speech_translation_config.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_translation_recognizer.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_pronunciation_assessment_config.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_pronunciation_assessment_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_grammar.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_grammar_phrase.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_phrase_list_grammar.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_grammar_list.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_class_language_model.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_dialog_service_connector.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_c_operations.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_dialog_service_connector_eventargs.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_dialog_service_config.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_connection.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_connection_eventargs.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_connection_message_eventargs.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_connection_message.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_conversation_translator.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_conversation.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_user.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_participant.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_conversation_translator_events.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_conversation_transcription_eventargs.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_conversation_transcription_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speech_synthesizer.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speech_synthesis_request.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speech_synthesis_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_audio_data_stream.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_synthesis_voices_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_voice_info.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speech_synthesis_eventargs.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speech_synthesis_word_boundary_eventargs.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speech_synthesis_viseme_eventargs.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speech_synthesis_bookmark_eventargs.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_keyword_recognition_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_keyword_recognition_eventargs.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_keyword_recognizer.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_conversation_transcriber.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_meeting.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_meeting_transcriber.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_meeting_transcription_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_meeting_transcription_eventargs.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_auto_detect_source_lang_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_source_language_recognizer.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speaker_recognizer.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speaker_recognition_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speaker_verification_model.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_voice_profile.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_speaker_identification_model.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_voice_profile_client.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_voice_profile_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_voice_profile_enrollment_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_voice_profile_phrase_result.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_file_logger.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_log_level.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_event_logger.h \
-  /Users/skyliu/azurespeechservices_sdk/MicrosoftCognitiveServicesSpeech.xcframework/macos-arm64_x86_64/MicrosoftCognitiveServicesSpeech.framework/Headers/speechapi_cxx_memory_logger.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/iostream \
-  /Users/skyliu/neuro.cpp/output/vtubeStudio.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cstdarg
