@@ -37,12 +37,12 @@ void AIHandler::HandleNewMessages() {
                 signal.setAiThinking(true);
 
                 // Step 1: Generate initial response using primary model
-                std::string primaryResponse = GenerateResponse(prompt, "llama3.1");
+                std::string primaryResponse = GenerateResponse(prompt, "neuro");
 
                 printf("%s\n",primaryResponse.c_str());
 
                 // Step 2: Refine the response using the secondary model
-                std::string refinedResponse = GenerateResponse(primaryResponse, "llama3.1");
+                std::string refinedResponse = GenerateResponse(primaryResponse, "neuro_refine");
 
                 printf("%s",refinedResponse.c_str());
 

@@ -38,7 +38,6 @@ TTS::TTS(const std::string& subscriptionKey, const std::string& region)
 }
 
 void TTS::speak(const std::string message) {
-    std::cout << "TTS: Speaking: " << message << std::endl;
     speaking = true;
 
     // Define SSML with pitch adjustment
