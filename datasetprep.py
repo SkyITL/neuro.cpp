@@ -48,7 +48,7 @@ def format_dialogue(data_path, output_path):
             completion = f"{text} <|im_end|>"
 
             # Format as prompt-completion pair
-            prompt = f"<|im_start|>system\n{full_prompt}\n<|im_start|>user\n{dialogue_history[-1]}<|im_end|>\n<|im_start|>assistant\n"
+            prompt = f"<|im_start|>system\n{full_prompt}<|im_end|>\n<|im_start|>user\n{dialogue_history[-1]}<|im_end|>\n<|im_start|>assistant\n"
             dialogue = {
                 "prompt": prompt,
                 "completion": completion

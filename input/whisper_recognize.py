@@ -5,7 +5,7 @@ from whisper import load_model
 
 def transcribe_audio_file(file_path):
     # Load the Whisper model
-    model = load_model("base")
+    model = load_model("base.en")
 
     # Read the audio data from the file
     with open(file_path, 'rb') as f:

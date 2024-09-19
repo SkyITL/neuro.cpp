@@ -3,10 +3,10 @@ import json
 import random
 
 # Define paths
-input_folder = '/Users/skyliu/neuroRawData/secondary'  # Update with your folder path containing JSONL files
-combined_output_path = '/Users/skyliu/Documents/Llama3/Neuro_Data/V4/secondary_dataset/combined.jsonl'  # Path for the combined JSONL file
-train_output_path = '/Users/skyliu/Documents/Llama3/Neuro_Data/V4/secondary_dataset/train.jsonl'  # Path for the training set JSONL file
-valid_output_path = '/Users/skyliu/Documents/Llama3/Neuro_Data/V4/secondary_dataset/valid.jsonl'  # Path for the validation set JSONL file
+input_folder = '/Users/skyliu/neuroRawData/preprocessed'  # Update with your folder path containing JSONL files
+combined_output_path = '/Users/skyliu/Documents/Llama3/Neuro_Data/V4/combined.jsonl'  # Path for the combined JSONL file
+train_output_path = '/Users/skyliu/Documents/Llama3/Neuro_Data/V4/train.jsonl'  # Path for the training set JSONL file
+valid_output_path = '/Users/skyliu/Documents/Llama3/Neuro_Data/V4/valid.jsonl'  # Path for the validation set JSONL file
 
 # Combine JSONL files
 def combine_jsonl_files(input_folder, combined_output_path):

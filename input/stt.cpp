@@ -64,8 +64,17 @@ void STT::recording_stop() {
 
 void STT::processAudioInput(const float *input, size_t frames) {
     // Append incoming audio frames to the buffer
-    audioBuffer.insert(audioBuffer.end(), input, input + frames);
+
+    // Check if this audio fragment contains speech or is silent
+    bool speechDetected = !isSilent(std::vector<float>(input, input + frames));
+
+    if (speechDetected) {
+        audioBuffer.insert(audioBuffer.end(), input, input + frames);
+        printf("isspeech\n");}
+    else 
+        printf("notspeech\n");
 }
+
 
 bool STT::isSilent(const std::vector<float> &buffer) {
     // Basic silence detection based on energy threshold
@@ -74,7 +83,7 @@ bool STT::isSilent(const std::vector<float> &buffer) {
         energy += sample * sample;
     }
     energy /= buffer.size();
-    return energy < 0.001;  // Adjust this threshold as needed
+    return energy < 0.0007;  // Adjust this threshold as needed
 }
 
 
@@ -146,20 +155,15 @@ void STT::analyzeCollectedAudio() {
 
 void STT::listen_loop() {
     std::cout << "STT: Listening from microphone..." << std::endl;
-    std::cout << "STT: Listening from microphone..." << std::endl;
 
     // Initialize PortAudio
     initialize();
-    std::cout << "STT: Listening from microphone..." << std::endl;
 
     // Open input stream
     PaStream *stream;
     PaError err = Pa_OpenDefaultStream(&stream, NUM_CHANNELS, 0, paFloat32, SAMPLE_RATE,
                                        FRAMES_PER_BUFFER, recordCallback, nullptr);
-    std::cout << "STT: Listening from microphone..." << std::endl;
-    
-    std::cout << err << std::endl;
-                
+
     if (err != paNoError) {
         std::cerr << "Failed to open PortAudio stream: " << Pa_GetErrorText(err) << std::endl;
         terminate();
@@ -177,7 +181,6 @@ void STT::listen_loop() {
     std::cout << "STT: Recording. Press 'a' to analyze collected audio or 'q' to quit..." << std::endl;
     char userInput;
     while (std::cin >> userInput) {
-        printf("in loop");
         if (userInput == 'a') {
             analyzeRequested = true;  // Set flag to request analysis
             analyzeCollectedAudio();  // Call to analyze the collected audio

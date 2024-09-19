@@ -1,2 +1,2 @@
-FROM /Users/skyliu/Downloads/neuro
+FROM /Users/skyliu/Downloads/neuro_refine
 PARAMETER num_ctx 128000

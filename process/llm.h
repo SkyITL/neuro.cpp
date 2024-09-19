@@ -16,6 +16,8 @@ private:
     static Signal signal; // Reference to the Signal object
 
     // Method to infer response using Ollama
+    static const std::string primary_prompt;
+    static const std::string secondary_prompt;
     static std::string GenerateResponse(const std::string& input, const std::string& modelName);
 };
 
