@@ -1,0 +1,12 @@
+"filename", "language", "C++", "Python", "JSON", "comment", "blank", "total"
+"/Users/skyliu/neuro.cpp/build/.cmake/api/v1/reply/index-2024-09-12T23-37-55-0754.json", "JSON", 0, 0, -132, 0, -1, -133
+"/Users/skyliu/neuro.cpp/build/.cmake/api/v1/reply/index-2024-09-19T23-39-51-0874.json", "JSON", 0, 0, 132, 0, 1, 133
+"/Users/skyliu/neuro.cpp/combinedataset.py", "Python", 0, 37, 0, 10, 11, 58
+"/Users/skyliu/neuro.cpp/datasetprep.py", "Python", 0, 43, 0, 11, 14, 68
+"/Users/skyliu/neuro.cpp/finetune.py", "Python", 0, 100, 0, 18, 28, 146
+"/Users/skyliu/neuro.cpp/input/stt.cpp", "C++", 0, 0, 0, 1, 2, 3
+"/Users/skyliu/neuro.cpp/output/tts.cpp", "C++", -1, 0, 0, 0, 0, -1
+"/Users/skyliu/neuro.cpp/process/llm.cpp", "C++", 44, 0, 0, 12, 12, 68
+"/Users/skyliu/neuro.cpp/process/llm.h", "C++", 2, 0, 0, 0, 0, 2
+"/Users/skyliu/neuro.cpp/secondary dataset.py", "Python", 0, 82, 0, 20, 23, 125
+"Total", "-", 45, 262, 0, 72, 90, 469

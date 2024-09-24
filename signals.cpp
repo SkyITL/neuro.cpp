@@ -8,7 +8,7 @@ bool Signal::aiThinking = false;
 bool Signal::newMessage = false;
 std::vector<std::string> Signal::chatMessages;
 bool Signal::humanSpeaking = false;
-std::vector<std::string> Signal::historyMessages;
+std::vector<std::pair<std::string, std::string>> Signal::historyMessages;
 std::queue<std::string> Signal::speakingTextQueue;
 double Signal::lastMessageTime = 0.0;
 bool Signal::sttReady = false;
@@ -62,8 +62,8 @@ void Signal::setSttReady(bool ready) {
     sttReady = ready;
 }
 
-void Signal::addHistoryMessage(std::string message) {
-    historyMessages.push_back(message);
+void Signal::addHistoryMessage(const std::string& role, const std::string& message) {
+    historyMessages.push_back({role, message});
 }
 
 void Signal::addChatMessage(std::string message) {
@@ -115,9 +115,9 @@ bool Signal::getSttReady() {
     return sttReady;
 }
 
-std::vector<std::string> Signal::getHistoryMessages() {
-    return historyMessages;
-}
+std::vector<std::pair<std::string, std::string>> Signal::getHistoryMessages() {
+        return historyMessages;
+    }
 
 std::vector<std::string> Signal::getChatMessages() {
     return chatMessages;

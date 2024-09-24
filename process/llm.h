@@ -8,17 +8,17 @@
 
 class AIHandler {
 public:
-
-    // Method to handle new messages and generate LLM responses
+    AIHandler(const std::string& modelPath, const std::string& adapterPath);
+    static std::string GenerateResponse(const std::string& input, const std::string& modelName);
     static void HandleNewMessages();
-
-private:
-    static Signal signal; // Reference to the Signal object
-
-    // Method to infer response using Ollama
     static const std::string primary_prompt;
     static const std::string secondary_prompt;
-    static std::string GenerateResponse(const std::string& input, const std::string& modelName);
+    static Signal signal;
+private:
+    static std::string loadedModelCommand;
+    static std::string model_name;
+    static std::string adapter_path;
 };
+
 
 #endif // AIHANDLER_H

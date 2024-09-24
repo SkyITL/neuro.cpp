@@ -1,0 +1,38 @@
+"filename", "language", "C++", "Python", "JSON", "CMake", "CMake Cache", "Makefile", "TypeScript", "YAML", "C", "comment", "blank", "total"
+"/Users/skyliu/neuro.cpp/build/.cmake/api/v1/query/client-vscode/query.json", "JSON", 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/skyliu/neuro.cpp/build/.cmake/api/v1/reply/cache-v2-c353b3868594ab042ca4.json", "JSON", 0, 0, 1375, 0, 0, 0, 0, 0, 0, 0, 1, 1376
+"/Users/skyliu/neuro.cpp/build/.cmake/api/v1/reply/cmakeFiles-v1-9947e52dbcdaada325c2.json", "JSON", 0, 0, 170, 0, 0, 0, 0, 0, 0, 0, 1, 171
+"/Users/skyliu/neuro.cpp/build/.cmake/api/v1/reply/codemodel-v2-f363c0430e80ac5fec5e.json", "JSON", 0, 0, 60, 0, 0, 0, 0, 0, 0, 0, 1, 61
+"/Users/skyliu/neuro.cpp/build/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json", "JSON", 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 1, 15
+"/Users/skyliu/neuro.cpp/build/.cmake/api/v1/reply/index-2024-09-19T23-39-51-0874.json", "JSON", 0, 0, 132, 0, 0, 0, 0, 0, 0, 0, 1, 133
+"/Users/skyliu/neuro.cpp/build/.cmake/api/v1/reply/target-neuro-Debug-6f2c19e4cde96d4f1b32.json", "JSON", 0, 0, 279, 0, 0, 0, 0, 0, 0, 0, 1, 280
+"/Users/skyliu/neuro.cpp/build/.cmake/api/v1/reply/toolchains-v1-6f619f6ed2b9cb9d1698.json", "JSON", 0, 0, 79, 0, 0, 0, 0, 0, 0, 0, 1, 80
+"/Users/skyliu/neuro.cpp/build/CMakeCache.txt", "CMake Cache", 0, 0, 0, 0, 344, 0, 0, 0, 0, 0, 81, 425
+"/Users/skyliu/neuro.cpp/build/CMakeFiles/3.30.3/CMakeCCompiler.cmake", "CMake", 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 18, 82
+"/Users/skyliu/neuro.cpp/build/CMakeFiles/3.30.3/CMakeCXXCompiler.cmake", "CMake", 0, 0, 0, 78, 0, 0, 0, 0, 0, 0, 24, 102
+"/Users/skyliu/neuro.cpp/build/CMakeFiles/3.30.3/CMakeSystem.cmake", "CMake", 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 5, 16
+"/Users/skyliu/neuro.cpp/build/CMakeFiles/3.30.3/CompilerIdC/CMakeCCompilerId.c", "C", 0, 0, 0, 0, 0, 0, 0, 0, 689, 61, 155, 905
+"/Users/skyliu/neuro.cpp/build/CMakeFiles/3.30.3/CompilerIdCXX/CMakeCXXCompilerId.cpp", "C++", 707, 0, 0, 0, 0, 0, 0, 0, 0, 62, 151, 920
+"/Users/skyliu/neuro.cpp/build/CMakeFiles/CMakeConfigureLog.yaml", "YAML", 0, 0, 0, 0, 0, 0, 0, 832, 0, 8, 59, 899
+"/Users/skyliu/neuro.cpp/build/CMakeFiles/neuro.dir/DependInfo.cmake", "CMake", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 7, 28
+"/Users/skyliu/neuro.cpp/build/CMakeFiles/neuro.dir/cmake_clean.cmake", "CMake", 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 2, 20
+"/Users/skyliu/neuro.cpp/build/CMakeFiles/neuro.dir/compiler_depend.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, 3
+"/Users/skyliu/neuro.cpp/build/Makefile", "Makefile", 0, 0, 0, 0, 0, 159, 0, 0, 0, 60, 71, 290
+"/Users/skyliu/neuro.cpp/build/cmake_install.cmake", "CMake", 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 8, 58
+"/Users/skyliu/neuro.cpp/build/compile_commands.json", "JSON", 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 26
+"/Users/skyliu/neuro.cpp/combinedataset.py", "Python", 0, 37, 0, 0, 0, 0, 0, 0, 0, 10, 11, 58
+"/Users/skyliu/neuro.cpp/datasetprep.py", "Python", 0, 43, 0, 0, 0, 0, 0, 0, 0, 11, 14, 68
+"/Users/skyliu/neuro.cpp/finetune.py", "Python", 0, 100, 0, 0, 0, 0, 0, 0, 0, 18, 28, 146
+"/Users/skyliu/neuro.cpp/input/stt.cpp", "C++", 147, 0, 0, 0, 0, 0, 0, 0, 0, 21, 41, 209
+"/Users/skyliu/neuro.cpp/input/stt.h", "C++", 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 28
+"/Users/skyliu/neuro.cpp/input/whisper_recognize.py", "Python", 0, 17, 0, 0, 0, 0, 0, 0, 0, 7, 8, 32
+"/Users/skyliu/neuro.cpp/main.cpp", "C++", 26, 0, 0, 0, 0, 0, 0, 0, 0, 29, 12, 67
+"/Users/skyliu/neuro.cpp/output/tts.cpp", "C++", 62, 0, 0, 0, 0, 0, 0, 0, 0, 20, 21, 103
+"/Users/skyliu/neuro.cpp/output/tts.h", "C++", 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 29
+"/Users/skyliu/neuro.cpp/output/vtubeStudio.h", "C++", 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/skyliu/neuro.cpp/process/llm.cpp", "C++", 104, 0, 0, 0, 0, 0, 0, 0, 0, 16, 26, 146
+"/Users/skyliu/neuro.cpp/process/llm.h", "C++", 14, 0, 0, 0, 0, 0, 0, 0, 0, 3, 8, 25
+"/Users/skyliu/neuro.cpp/secondary dataset.py", "Python", 0, 82, 0, 0, 0, 0, 0, 0, 0, 20, 23, 125
+"/Users/skyliu/neuro.cpp/signals.cpp", "C++", 98, 0, 0, 0, 0, 0, 0, 0, 0, 3, 27, 128
+"/Users/skyliu/neuro.cpp/signals.h", "C++", 45, 0, 0, 0, 0, 0, 0, 0, 0, 10, 21, 76
+"Total", "-", 1251, 279, 2136, 242, 344, 159, 2, 832, 689, 359, 842, 7135

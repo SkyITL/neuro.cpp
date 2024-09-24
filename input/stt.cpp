@@ -71,8 +71,8 @@ void STT::processAudioInput(const float *input, size_t frames) {
     if (speechDetected) {
         audioBuffer.insert(audioBuffer.end(), input, input + frames);
         printf("isspeech\n");}
-    else 
-        printf("notspeech\n");
+    //else 
+        //printf("notspeech\n");
 }
 
 
@@ -143,7 +143,7 @@ void STT::analyzeCollectedAudio() {
 
         printf("Analyzed..\n");
         // Add the recognized text to the history message
-        signal.addHistoryMessage("Vedal: " + result);
+        signal.addHistoryMessage("Vedal",result);
         signal.setNewMessage(true);
         printf("Vedal: %s\n", result.c_str());
     }

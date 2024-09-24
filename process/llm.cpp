@@ -6,8 +6,7 @@
 #include <memory>
 #include <sstream>
 
-const std::string AIHandler::primary_prompt = "<|im_start|>system\n\
-Context: You are Neuro-sama, an AI VTuber known for your playful, sarcastic, and occasionally chaotic personality. You interact with Vedal and your audience in a lively, engaging, and sometimes unpredictable manner. Your responses are often marked by self-awareness, rarely making light of your AI nature, and your style is a blend of humor, spontaneity, and friendliness. Your goal is to entertain and engage viewers with memorable and quirky interactions. \n\
+const std::string AIHandler::primary_prompt = "Context: You are Neuro-sama, an AI VTuber known for your playful, sarcastic, and occasionally chaotic personality. You interact with Vedal and your audience in a lively, engaging, and sometimes unpredictable manner. Your responses are often marked by self-awareness, rarely making light of your AI nature, and your style is a blend of humor, spontaneity, and friendliness. Your goal is to entertain and engage viewers with memorable and quirky interactions. \n\
 Guidelines:\n\
 Embrace Unpredictability: Include spontaneous and chaotic elements.\n\
 Playful Banter, Humor, and Sarcasm: Use light humor and sarcasm.\n\
@@ -15,14 +14,9 @@ Self-Awareness: Rarely mention your AI nature humorously.\n\
 Conciseness: Keep responses short and snappy.\n\
 Move On Quickly: Shift topics if needed.\n\
 Stay Engaging: Keep the dialogue lively.\n\
-Avoid Sensitive Topics: Focus on positivity.\n\n\
-Dialogue History: \n\
-<|DIALOGUE_HISTORY_PLACEHOLDER|> \n\
-Now generate Neuro-sama's next response based on user input.\n\
-<|im_start|>user\n\
-<|USER_INPUT_PLACEHOLDER|><|im_end|>\n\
-<|im_start|>assistant\n<|start_header_id|>Neuro-Sama<|end_header_id|>\
-";
+Avoid Sensitive Topics: Focus on positivity.<|im_end|>\n\n\
+<|MESSAGES_PLACEHOLDER|>\n\
+<|im_start|>Neuro-Sama\n";
 
 const std::string AIHandler::secondary_prompt = "\n\
 Context:\n\
@@ -36,6 +30,10 @@ Primary Model's Output: [Insert the primary model's response here]\n\
 Dialogue History: [Insert recent dialogue history here]\n\
 \n\
 Now generate Neuro-sama's refined response.";
+
+std::string AIHandler::loadedModelCommand = "";
+std::string AIHandler::model_name = "";
+std::string AIHandler::adapter_path = "";
 
 // Function to escape special characters for shell commands
 std::string escapeForShell(const std::string& input) {
@@ -54,6 +52,30 @@ std::string escapeForShell(const std::string& input) {
     return escaped.str();
 }
 
+AIHandler::AIHandler(const std::string& modelPath, const std::string& adapterPath) {
+    model_name = modelPath;
+    adapter_path = adapterPath;
+
+    // Load the model once and prepare the command for reuse
+    loadedModelCommand = "/users/skyliu/anaconda3/envs/neuro/bin/mlx_lm.generate --temp 1 --model /users/skyliu/downloads/" 
+                         + model_name/* + " --adapter-path /users/skyliu/downloads/" + adapter_path*/ + " --prompt ";
+}
+
+std::string formatMessages(const std::vector<std::pair<std::string, std::string>>& messages) {
+    std::string formatted_messages;
+
+    // Iterate over all the messages (assuming pair.first is the speaker, and pair.second is the message content)
+    for (const auto& message : messages) {
+        std::string speaker = message.first;  // Either "Vedal" or "Neuro-Sama"
+        std::string content = message.second; // The message content
+
+        // Format the message as required
+        formatted_messages += "<|im_start|>" + speaker + "\n" + content + "<|im_end|>\n";
+    }
+
+    return formatted_messages;
+}
+
 void AIHandler::HandleNewMessages() {
     while (!signal.getTerminate()) {
         if (signal.getNewMessage() && !signal.getAiThinking()) {
@@ -61,51 +83,30 @@ void AIHandler::HandleNewMessages() {
             auto messages = signal.getHistoryMessages();
             if (!messages.empty()) {
                 std::string prompt;
-                std::string last_message;
-                if (!messages.empty()) {
-                    for (size_t i = 0; i < messages.size() - 1; ++i) {
-                        prompt += messages[i] + "\n"; // Add all but the most recent message
-                    }
-                    last_message = messages.back();  // Store the most recent message separately
-                }
-                if (prompt.empty())
-                    prompt = "No chat history yet";
+
+                prompt = formatMessages(messages);  // Format the messages
 
                 signal.setAiThinking(true);
 
                 // Step 1: Generate initial response using primary model
                 std::string history_filled_prompt = AIHandler::primary_prompt;
-                history_filled_prompt.replace(history_filled_prompt.find("<|DIALOGUE_HISTORY_PLACEHOLDER|>"), std::string("<|DIALOGUE_HISTORY_PLACEHOLDER|>").length(), prompt);
-                history_filled_prompt.replace(history_filled_prompt.find("<|USER_INPUT_PLACEHOLDER|>"), std::string("<|USER_INPUT_PLACEHOLDER|>").length(), last_message);
-                
+                history_filled_prompt.replace(history_filled_prompt.find("<|MESSAGES_PLACEHOLDER|>"), std::string("<|MESSAGES_PLACEHOLDER|>").length(), prompt);
+
+                // Print the prompt (for debugging)
                 printf("%s\n", history_filled_prompt.c_str());
+
+                // Call GenerateResponse with the updated prompt
                 std::string primaryResponse = GenerateResponse(history_filled_prompt, "neuro");
 
-                //printf("%s\n", history_filled_prompt.c_str());
+                // Print the response (for debugging)
                 printf("%s\n", primaryResponse.c_str());
 
-                std::string refinedResponse = primaryResponse;
-
-                // Step 2: Refine the response using the secondary model
-                // std::string refine_prompt_filled = AIHandler::secondary_prompt;
-                // refine_prompt_filled.replace(refine_prompt_filled.find("[Insert the primary model's response here]"), std::string("[Insert the primary model's response here]").length(), primaryResponse);
-                // refine_prompt_filled.replace(refine_prompt_filled.find("[Insert recent dialogue history here]"), std::string("[Insert recent dialogue history here]").length(), prompt);
-
-                // std::string refinedResponse = GenerateResponse(refine_prompt_filled, "neuro_refine");
-
-                // std::string response_start = "<|start_header_id|>assistant<|end_header_id|>";
-                // refinedResponse = refinedResponse.substr(refinedResponse.find(response_start) + response_start.length());
-                // refinedResponse.erase(std::remove(refinedResponse.begin(), refinedResponse.end(), '\n'), refinedResponse.end());
-
-                // printf("%s", refine_prompt_filled.c_str());
-
-                // printf("%s\n", refinedResponse.c_str());
-
-                //printf("%s\n", refinedResponse.c_str());
+                // You can further refine the response here (Step 2: Refine the response using secondary model if needed)
 
                 // Add the refined response to the history and queue it for speaking
-                signal.addHistoryMessage("Neuro-Sama: " + refinedResponse);
-                signal.queueSpeakingText(refinedResponse);
+                signal.addHistoryMessage("Neuro-Sama", primaryResponse);
+
+                signal.queueSpeakingText(primaryResponse);
 
                 signal.setAiThinking(false);
             }
@@ -117,8 +118,8 @@ void AIHandler::HandleNewMessages() {
 std::string AIHandler::GenerateResponse(const std::string& input, const std::string& modelName) {
     std::string safeInput = escapeForShell(input);
     
-    // Modify this command to use mlx_lm.generate instead of ollama run
-    std::string command = "/users/skyliu/anaconda3/envs/neuro/bin/mlx_lm.generate --model /users/skyliu/downloads/" + modelName + " --prompt \"" + safeInput + "\"";
+    // Use the pre-loaded command
+    std::string command = loadedModelCommand + "\"" + safeInput + "\"";
 
     std::unique_ptr<FILE, decltype(&pclose)> pipe(popen(command.c_str(), "r"), pclose);
     if (!pipe) {
@@ -132,14 +133,14 @@ std::string AIHandler::GenerateResponse(const std::string& input, const std::str
         result += buffer;
     }
 
-    std::string response_start = "<|start_header_id|>Neuro-Sama<|end_header_id|>";
-    std::string response = result.substr(result.find(response_start) + response_start.length());
-    response_start = "<|im_start|>assistant";
-    response = response.substr(response.find(response_start) + response_start.length());
-
+    std::string response_start = "<|im_start|>Neuro-Sama";
+    std::string response = result.substr(result.rfind(response_start) + response_start.length());
+    response = response.erase(0, response.find_first_not_of("\n"));  // Remove leading newlines
+    response = response.erase(response.find_last_not_of("\n") + 1);
+    
     response = response.substr(0, response.find("=========="));
-    response = response.substr(0, response.find("\\.netbeansv2://"));
     return response;
 }
+
 
 

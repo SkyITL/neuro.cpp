@@ -19,7 +19,7 @@ private:
     static std::queue<std::string> speakingTextQueue;
 
     //historyMessages stores all messages that have been sent
-    static std::vector<std::string> historyMessages;
+    static std::vector<std::pair<std::string, std::string>> historyMessages;
 
     //chatMessages stores all messages that have been received
     static std::vector<std::string> chatMessages;
@@ -42,7 +42,7 @@ public:
 
     //methods to handle history and chat messages
 
-    static void addHistoryMessage(std::string);
+    static void addHistoryMessage(const std::string& role, const std::string& message);
     static void addChatMessage(std::string);
 
     //method to terminate all threads
@@ -67,7 +67,7 @@ public:
 
     //methods to handle history and chat messages
 
-    static std::vector<std::string> getHistoryMessages();
+    static std::vector<std::pair<std::string, std::string>> getHistoryMessages();
     static std::vector<std::string> getChatMessages();
 
     static bool getTerminate();

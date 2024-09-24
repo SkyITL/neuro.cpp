@@ -17,7 +17,7 @@ int main() {
 
     // Create TTS object
     TTS tts(speechKey, speechRegion);
-    AIHandler llm;
+    AIHandler llm("llama3.1_dolphin_8B","llama3.1_8B/adapters");
 
     // Launch the TTS::HandleNewMessages() function in a separate thread
     std::thread ttsThread(&TTS::HandleNewMessages); 
