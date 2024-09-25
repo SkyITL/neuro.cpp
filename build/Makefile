@@ -129,6 +129,30 @@ neuro/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuro.dir/build.make CMakeFiles/neuro.dir/build
 .PHONY : neuro/fast
 
+inference.o: inference.cpp.o
+.PHONY : inference.o
+
+# target to build an object file
+inference.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuro.dir/build.make CMakeFiles/neuro.dir/inference.cpp.o
+.PHONY : inference.cpp.o
+
+inference.i: inference.cpp.i
+.PHONY : inference.i
+
+# target to preprocess a source file
+inference.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuro.dir/build.make CMakeFiles/neuro.dir/inference.cpp.i
+.PHONY : inference.cpp.i
+
+inference.s: inference.cpp.s
+.PHONY : inference.s
+
+# target to generate assembly for a file
+inference.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuro.dir/build.make CMakeFiles/neuro.dir/inference.cpp.s
+.PHONY : inference.cpp.s
+
 input/stt.o: input/stt.cpp.o
 .PHONY : input/stt.o
 
@@ -258,6 +282,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... neuro"
+	@echo "... inference.o"
+	@echo "... inference.i"
+	@echo "... inference.s"
 	@echo "... input/stt.o"
 	@echo "... input/stt.i"
 	@echo "... input/stt.s"

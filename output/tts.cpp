@@ -6,8 +6,8 @@
 #include <queue>
 
 // Define global variables for speech key and region
-const std::string speechKey = "863f1e1615a644ab956e71c71facf573";
-const std::string speechRegion = "eastasia";
+const std::string speechKey = ;
+const std::string speechRegion = ;
 
 // Initialize the shared synthesizer
 bool TTS::speaking = false;

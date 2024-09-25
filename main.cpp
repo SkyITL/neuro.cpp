@@ -7,12 +7,12 @@
 #include <iostream>
 #include <thread>
 
-int main() {
+/*int main() {
 
     printf("Starting Project...");
 
-    const std::string speechKey = "863f1e1615a644ab956e71c71facf573";
-    const std::string speechRegion = "eastasia";
+    const std::string speechKey = "";
+    const std::string speechRegion = "";
     printf(Signal::getTerminate()? "True\n":"False\n");
 
     // Create TTS object
@@ -37,7 +37,7 @@ int main() {
     /*if (ttsThread.joinable()) {
         ttsThread.detach(); // Detach if you don't want to join to prevent blocking, or use join() if you want to wait for completion.
     }
-    */
+    
     printf(Signal::getTerminate()? "True\n":"False\n");
     while (!Signal::getTerminate()) {
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
@@ -59,8 +59,8 @@ int main() {
     // join all the threads
     ttsThread.join();
     llmThread.join();
-    sttThread.join();*/
+    sttThread.join();
 
     return 0;
 }
-
+*/

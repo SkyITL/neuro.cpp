@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/skyliu/neuro.cpp/inference.cpp" "CMakeFiles/neuro.dir/inference.cpp.o" "gcc" "CMakeFiles/neuro.dir/inference.cpp.o.d"
   "/Users/skyliu/neuro.cpp/input/stt.cpp" "CMakeFiles/neuro.dir/input/stt.cpp.o" "gcc" "CMakeFiles/neuro.dir/input/stt.cpp.o.d"
   "/Users/skyliu/neuro.cpp/main.cpp" "CMakeFiles/neuro.dir/main.cpp.o" "gcc" "CMakeFiles/neuro.dir/main.cpp.o.d"
   "/Users/skyliu/neuro.cpp/output/tts.cpp" "CMakeFiles/neuro.dir/output/tts.cpp.o" "gcc" "CMakeFiles/neuro.dir/output/tts.cpp.o.d"
